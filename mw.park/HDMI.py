@@ -93,8 +93,8 @@ while True:
             print(st_list)
             print(output_string.format(st_list.pop(), st_list))
             
-            j = int(int_sub / 20) + 1
-            k = int_sub % 20
+            j = int(int_sub / 8) + 1
+            k = int_sub % 8
             print_list.remove([j, k])
 
         else:
