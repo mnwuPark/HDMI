@@ -26,3 +26,17 @@ def input_print(value):
             if i % 20 == 0:
                 print(input_string)
                 input_string = ""
+
+output_string = '''
+
+#################################
+#                               #
+#                               #
+#          OUTPUT : {}          #
+#                               #
+#                               #
+#################################
+
+'''
+
+input_string = " INPUT : {} LIST {} "
