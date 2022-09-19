@@ -91,7 +91,7 @@ while True:
         if int_sub in st_list:
             st_list.remove(int_sub)
             print(st_list)
-            print(output_string.format(st_list.pop(), st_list))
+            print(output_string.format(st_list[-1], st_list))
             
             j = int(int_sub / 8) + 1
             k = int_sub % 8
