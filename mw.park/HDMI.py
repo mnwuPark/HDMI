@@ -14,19 +14,19 @@ def input_print(value):
     t_p = a % 20
     print_list.append([f_p, t_p])
 
-    for i in range(20):
+    for i in range(8):
         i += 1
-        j = int(i / 20) + 1
+        j = int(i / 8) + 1
         k = i % 20
         f = [j, k]
         if f in print_list:
             input_string += "■"
-            if i % 20 == 0:
+            if i % 8 == 0:
                 print(input_string)
                 input_string = ""
         else:
             input_string += "□"
-            if i % 20 == 0:
+            if i % 8 == 0:
                 print(input_string)
                 input_string = ""
 
@@ -35,7 +35,7 @@ output_string = '''
 #################################
 #                               #
 #                               #
-#          OUTPUT : {}          #
+#          OUTPUT : {}           #
 #                               #
 #                               #
 #################################
@@ -51,7 +51,7 @@ while True:
 
     if "input" in scan:
         add = scan[6:]
-        if int(add) > 20:
+        if int(add) > 8:
             print("값을 초과하였습니다.")
             break
         elif int(add) < 1:
@@ -74,7 +74,7 @@ while True:
 
     elif "output" in scan:
         sub = scan[7:]
-        if int(sub) > 20:
+        if int(sub) > 8:
             print("값을 초과하였습니다.")
             break
         elif int(sub) < 1:
