@@ -8,23 +8,23 @@ def input_print(value):
     for i in value:
         a = i
 
-    f_p = int((a / 20) + 1)
-    t_p = a % 20
+    f_p = int((a / 8) + 1)
+    t_p = a % 8
     print_list.append([f_p, t_p])
 
-    for i in range(9):
+    for i in range(8):
         i += 1
-        j = int(i / 9) + 1
-        k = i % 20
+        j = int(i / 8) + 1
+        k = i % 8
         f = [j, k]
         if f in print_list:
             input_string += "■"
-            if i % 9 == 0:
+            if i % 8 == 0:
                 print(input_string)
                 input_string = ""
         else:
             input_string += "□"
-            if i % 9 == 0:
+            if i % 8 == 0:
                 print(input_string)
                 input_string = ""
 
@@ -49,7 +49,7 @@ while True:
 
     if "input" in scan:
         add = scan[6:]
-        if int(add) > 9:
+        if int(add) > 8:
             print("값을 초과하였습니다.")
             break
         elif int(add) < 1:
@@ -92,8 +92,8 @@ while True:
             print(st_list)
             print(output_string.format(st_list[-1], st_list))
             
-            j = int(int_sub / 9) + 1
-            k = int_sub % 9
+            j = int(int_sub / 8) + 1
+            k = int_sub % 8
             print_list.remove([j, k])
 
         else:
