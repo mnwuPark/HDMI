@@ -57,3 +57,17 @@ while True:
         elif int(add) < 1:
             print("값이 너무 작습니다.")
             break
+        
+        try:
+            int_add = int(add)
+        except Exception as e:
+            print("Error")
+            print(e)
+            break
+
+        if int_add in st_list:
+            print("이미 입력된 값입니다.")
+        else:
+            st_list.append(int_add)
+            input_print(st_list)
+            print(st_list)
