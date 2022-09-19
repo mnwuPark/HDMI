@@ -87,3 +87,16 @@ while True:
             print("Error")
             print(e)
             break
+
+        if int_sub in st_list:
+            st_list.remove(int_sub)
+            print(st_list)
+            print(output_string.format(st_list.pop(), st_list))
+            
+            j = int(int_sub / 20) + 1
+            k = int_sub % 20
+            print_list.remove([j, k])
+
+        else:
+            print("존재하지 않는 값입니다.")
+        
