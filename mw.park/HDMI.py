@@ -1,7 +1,5 @@
-from tkinter.tix import Tree
+print_list = [[1, 1]]
 
-
-print_list = []
 def input_print(value):
     count = value.__len__()
     length = count * 3
@@ -44,7 +42,7 @@ output_string = '''
 
 input_string = " INPUT : {} LIST {} "
 
-st_list = []
+st_list = [1]
 
 while True:
     scan = input("input : ")
@@ -100,6 +98,10 @@ while True:
 
         else:
             print("존재하지 않는 값입니다.")
-        
+
+    elif "status" in scan:
+        print("현재 활성되어 있는 코드 : {}".format(st_list))
+        print("OUTPUT Value : {}".format(st_list[-1]))
+
     else:
         print("잘못된 값입니다.")
