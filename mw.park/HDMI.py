@@ -1,3 +1,6 @@
+from tkinter.tix import Tree
+
+
 print_list = []
 def input_print(value):
     count = value.__len__()
@@ -40,3 +43,17 @@ output_string = '''
 '''
 
 input_string = " INPUT : {} LIST {} "
+
+st_list = []
+
+while True:
+    scan = input("input : ")
+
+    if "input" in scan:
+        add = scan[6:]
+        if int(add) > 20:
+            print("값을 초과하였습니다.")
+            break
+        elif int(add) < 1:
+            print("값이 너무 작습니다.")
+            break
