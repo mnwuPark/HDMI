@@ -71,3 +71,12 @@ while True:
             st_list.append(int_add)
             input_print(st_list)
             print(st_list)
+
+    elif "output" in scan:
+        sub = scan[7:]
+        if int(sub) > 20:
+            print("값을 초과하였습니다.")
+            break
+        elif int(sub) < 1:
+            print("값이 너무 작습니다.")
+            break
