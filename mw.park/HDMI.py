@@ -100,3 +100,5 @@ while True:
         else:
             print("존재하지 않는 값입니다.")
         
+    else:
+        print("잘못된 값입니다.")
