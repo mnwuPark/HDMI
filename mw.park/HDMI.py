@@ -80,3 +80,10 @@ while True:
         elif int(sub) < 1:
             print("값이 너무 작습니다.")
             break
+        
+        try:
+            int_sub = int(sub)
+        except Exception as e:
+            print("Error")
+            print(e)
+            break
