@@ -71,6 +71,7 @@ while True:
             st_list.append(int_add)
             input_print(st_list)
             print(st_list)
+            print("OUTPUT Value : {}".format(st_list[-1]))
 
     elif "output" in scan:
         sub = scan[7:]
